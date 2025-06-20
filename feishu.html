@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feishu</title>
+    <link rel="stylesheet" href="feishu.css">
+    <link rel="stylesheet" href="./download/font_4917433_5dji358qvgm/demo.css">
+    <link rel="stylesheet" hr ef="./download/font_4917433_5dji358qvgm/iconfont.css ">
+    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="feishu.js" defer></script>
+    <script src="./download/font_4917433_5dji358qvgm/iconfont.js"></script>
+    <script src="dist/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="nav">
+            <a href="https://www.feishu.cn/" class="nav-logo" alt="">
+                <img src="https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/eff71c9398c04ebd8452d748646fc1e8.png~tplv-jbbdkfciu3-png:0:0.png"
+                    alt="">
+            </a>
+            <div class="menu-container">
+                <div class="header-menuitem">
+                    <span class="menuitem-text">案例与方案</span>
+                    <span class="menuitem-img">
+                        <img src="./image/向下箭头.png" alt="">
+                    </span>
+                </div>
+                <div class="header-menuitem">
+                    <span class="menuitem-text">产品功能</span>
+                    <span class="menuitem-img">
+                        <img src="./image/向下箭头.png" alt="">
+                    </span>
+                </div>
+                <div class="header-menuitem">
+                    <span class="menuitem-text">合作与支持</span>
+                    <span class="menuitem-img">
+                        <img src="./image/向下箭头.png" alt="">
+                    </span>
+                </div>
+                <div class="header-menuitem">
+                    <span class="menuitem-text">飞书社</span>
+                    <span class="menuitem-img">
+                        <img src="./image/向下箭头.png" alt="">
+                    </span>
+                </div>
+                <div class="header-menuitem">
+                    <span class="menuitem-text">定价</span>
+                    <span class="menuitem-img">
+                        <img src="./image/向下箭头.png" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="menu-buttom">
+                <div class="header-menubuttom">登录</div>
+                <div class="header-menubuttom">注册</div>
+                <div class="header-menubuttom">试用</div>
+            </div>
+        </div>
+        <div class="header-menuitem-common" id="common-1">
+            <div class="common-left">
+
+            </div>
+            <div class="common-right"></div>
+        </div>
+
+        <div class="header-menuitem-common" id="common-2">
+            <div class="common-left">
+                <div class="common-left-text">
+                </div>
+            </div>
+            <div class="common-right">
+
+            </div>
+        </div>
+        <div class="header-menuitem-common" id="common-3">
+
+            <div class="common-left">
+                <div class="common-left-text"></div>
+                <div class="common-right"></div>
+            </div>
+        </div>
+        <div class="menuitem-scroll">
+            <div class="scroll-box-container">
+                <div class="scroll-box">
+                    <div class="scroll-box-img">
+                        <img src="./image/quan-1.png" alt="">
+                    </div>
+                    <span class="scroll-box-text">下载飞书</span>
+                </div>
+                <div class="scroll-box">
+                    <div class="scroll-box-img">
+                        <img src="./image/quan-2.png" alt="">
+                    </div>
+                    <span class="scroll-box-text">热门能力</span>
+                </div>
+                <div class="scroll-box">
+                    <div class="scroll-box-img">
+                        <img src="./image/quan-3.png" alt="">
+                    </div>
+                    <span class="scroll-box-text">明星产品</span>
+                </div>
+                <div class="scroll-box">
+                    <div class="scroll-box-img">
+                        <img src="./image/quan-4.png" alt="">
+                    </div>
+                    <span class="scroll-box-text">解决方案</span>
+                </div>
+                <div class="scroll-box">
+                    <div class="scroll-box-img">
+                        <img src="./image/quan-5.png" alt="">
+                    </div>
+                    <span class="scroll-box-text">更多资源</span>
+                </div>
+            </div>
+        </div>
+        <div class="download-pc">
+            <h1>
+                下载飞书客户端
+            </h1>
+            <span>
+                同时支持 iOS，Android，iPadOS，macOS，Windows，Linux 版本
+            </span>
+            <div class="download-explain">
+                开发者：北京飞书科技有限公司&nbsp
+                <a href="http://">应用权限&nbsp&nbsp</a>
+                <a href="http://">隐私政策</a>
+                &nbsp|&nbsp想知道飞书更新了哪些内容？看看
+                <a href="http://">飞书更新日志</a>
+            </div>
+            <div class="download-ways">
+                <div class="download-way" id="windows">
+                    <img src="./iconfont/windows.svg" alt="">
+                    <p>windows</p>
+                </div>
+                <div class="download-way" id="macos">
+                    <img src="./iconfont/macOS.svg" alt="">
+                    <p>macos</p>
+                </div>
+                <div class="download-way" id="android">
+                    <img src="./iconfont/android.svg" alt="">
+                    <p>android</p>
+                </div>
+                <div class="download-way" id="ios">
+                    <img src="./iconfont/ios.svg" alt="">
+                    <p>ios</p>
+                </div>
+                <div class="download-way" id="linux">
+                    <img src="./iconfont/Beta.svg" alt="" class="download-way-linux-beta">
+                    <img src="./iconfont/linux.svg" alt="">
+                    <p>linux</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="feishu-benefits">
+            <div class="feishu-benefits-introduce">
+                <h1>
+                    立即体验和了解飞书热门产品能力
+                </h1>
+            </div>
+            <div class="feishu-benefits-container">
+                <div class="feishu-benefits-part">
+                    <span>
+                        <img src="https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/d5d95dbeaffa499194db032e13e1993b.png~tplv-jbbdkfciu3-png:0:0.png"
+                            alt="">
+                    </span>
+                    <div class="container-box">
+                        <h2>一站式CRM系统</h2>
+                        <p>一站式记录和管理客户及商机信息</p>
+                        <button>立即体验</button>
+                    </div>
+                </div>
+                <div class="feishu-benefits-part">
+                    <span>
+                        <img src="https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/d5d95dbeaffa499194db032e13e1993b.png~tplv-jbbdkfciu3-png:0:0.png"
+                            alt="">
+                    </span>
+                    <div class="container-box">
+                        <h2>轻型薪酬系统</h2>
+                        <p>为HR与财务设计，智能处理薪酬和假勤</p>
+                        <button>立即体验</button>
+                    </div>
+                </div>
+                <div class="feishu-benefits-part">
+                    <span>
+                        <img src="https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/d5d95dbeaffa499194db032e13e1993b.png~tplv-jbbdkfciu3-png:0:0.png"
+                            alt="">
+                    </span>
+                    <div class="container-box">
+                        <h2>全新多维表格仪表盘</h2>
+                        <p>全新仪表盘，极致强大，精彩尽显</p>
+                        <button>立即体验</button>
+                    </div>
+                </div>
+                <div class="feishu-benefits-part">
+                    <span>
+                        <img src="https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/71a84d9a5e924b278315745b71f1a49f.png~tplv-jbbdkfciu3-png:0:0.png"
+                            alt="">
+                    </span>
+                    <div class="container-box">
+                        <h2>全新飞书地代码平台</h2>
+                        <p>已构建字节跳动数千业务系统</p>
+                        <button>立即体验</button>
+                    </div>
+                </div>
+                <div class="feishu-benefits-part">
+                    <span>
+                        <img src="https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/9831bb54fefd4e438b1d4f7fb6402a66.png~tplv-jbbdkfciu3-png:0:0.png"
+                            alt="">
+                    </span>
+                    <div class="container-box">
+                        <h2>企业级AI智能助手</h2>
+                        <p>围绕企业场景，深度定制AI系统</p>
+                        <button>立即体验</button>
+                    </div>
+                </div>
+                <div class="feishu-benefits-part">
+                    <span>
+                        <img src="https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/4cc6ad54b4e24a59b320e843d87407a1.png~tplv-jbbdkfciu3-png:0:0.png"
+                            alt="">
+                    </span>
+                    <div class="container-box">
+                        <h2>飞书项目焕新计划</h2>
+                        <p>流程能穿透，管理才清晰</p>
+                        <button>立即体验</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feishu-product">
+            <div class="feishu-product-introduce">
+                <h1>
+                    免费试用飞书多款产品
+                </h1>
+            </div>
+            <div class="feishu-product-container">
+                <div class="feishu-product-textpart">
+                    <div class="textpart-box">
+                        <img src="./image/product1.png" alt="">
+                        <p>飞书多维表格</p>
+                    </div>
+                    <div class="textpart-box">
+                        <img src="./image/product2.png" alt="">
+                        <p>飞书智能伙伴</p>
+                    </div>
+                    <div class="textpart-box">
+                        <img src="./image/product3.png" alt="">
+                        <p>飞书项目</p>
+                    </div>
+                    <div class="textpart-box">
+                        <img src="./image/product4.png" alt="">
+                        <p>飞书低代码平台</p>
+                    </div>
+                    <div class="textpart-box">
+                        <img src="./image/product5.png" alt="">
+                        <p>飞书妙记</p>
+                    </div>
+                    <div class="textpart-box">
+                        <img src="./image/product6.png" alt="">
+                        <p>飞书招聘</p>
+                    </div>
+                    <div class="textpart-box">
+                        <img src="./image/product7.png" alt="">
+                        <p>飞书人事</p>
+                    </div>
+                    <div class="textpart-box">
+                        <img src="./image/product8.png" alt="">
+                        <p>飞书视频会议</p>
+                    </div>
+                </div>
+                <div class="textpart-show">
+                    <div class="textpart-left">
+                        <div class="left-ap">
+                            <a id="left-a" href="https://project.feishu.cn/home?tracking_code=701TL00000BQVuhYAH"
+                                target="_blank">复杂场景专业
+                                项目管理平台</a>
+                            <p id="left-p">
+                                轻松共享任何内容、强大的交互能力、智能会议纪要和多端友好流畅的开会体验。按秒级速度识别语言并呈现字幕，支持会中共享白板并创作，将想法“画”出来。</p>
+                        </div>
+                        <div class="left-buttom">
+                            <a href="https://www.feishu.cn/landing/sku_hire?tracking_code=701TL00000BQVuhYAH">领取权益</a>
+                        </div>
+                    </div>
+                    <div class="textpart-right">
+                        <img src="./image/product-1.png" alt="">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="solutions">
+            <div class="solutions-textpart">
+                <h1>
+                    各行业的飞书解决方案
+                </h1>
+                <div class="solutions-nav">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="swiper solutions-swiper">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide solution">
+                        <img src="./image/solution1.jpg" alt="" class="solution-common">
+                        <div class="solution-cover">
+                            <h2>制造</h2>
+                            <span>拉通全链路生产协作</span>
+                            <img src="./image/右箭头.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide solution">
+                        <img src="./image/solutoion2.jpg" alt="" class="solution-common">
+                        <div class="solution-cover">
+                            <h2>金融</h2>
+                            <span>极致业务融合深入数字化</span>
+                            <img src="./image/右箭头.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide solution">
+                        <img src="./image/solution3.jpg" alt="" class="solution-common">
+                        <div class="solution-cover">
+                            <h2>消费</h2>
+                            <span>携动消费增长新红利</span>
+                            <img src="./image/右箭头.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide solution">
+                        <img src="./image/solution4.png" alt="" class="solution-common">
+                        <div class="solution-cover">
+                            <h2>汽车</h2>
+                            <span>打造车企数字化转型</span>
+                            <img src="./image/右箭头.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide solution">
+                        <img src="./image/solution5.jpg" alt="" class="solution-common">
+                        <div class="solution-cover">
+                            <h2>零售</h2>
+                            <span>提升全渠道运营效率</span>
+                            <img src="./image/右箭头.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-button-prev">
+                    <img src="./image/右箭头.png" alt="">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="./image/向右双箭头-copy.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="learn-feishu">
+            <div class="learn-textpart">
+                <h1>以下资源可以帮你快速了解飞书</h1>
+            </div>
+            <div class="learn-boxpart">
+                <div class="boxpart-box">
+                    <a href="" target="_blank">
+                        <img src="./image/icon_bl4r3ak2vhn/1.png" alt="">
+                        <h3>模板中心</h3>
+                        <p>飞书模板中心，您的一站式办公自动化解决方案，精选多种工作场景模板</p>
+                    </a>
+                </div>
+                <div class="boxpart-box">
+                    <a href="" target="_blank">
+                        <img src="./image/icon_bl4r3ak2vhn/2.png" alt="">
+                        <h3>版本对比</h3>
+                        <p>飞书针对不同企业级组织需求，提供基础版，商业版和企业版，伴随业务发展按需筛选</p>
+                    </a>
+                </div>
+                <div class="boxpart-box">
+                    <a href="" target="_blank">
+                        <img src="./image/icon_bl4r3ak2vhn/3.png" alt="">
+                        <h3>飞书最佳实践库</h3>
+                        <p>沉淀各行业高效协同的最佳实践，帮助企业，组织与个人更高效，更愉悦地达成工作目标</p>
+                    </a>
+                </div>
+                <div class="boxpart-box">
+                    <a href="" target="_blank">
+                        <img src="./image/icon_bl4r3ak2vhn/4.png" alt="">
+                        <h3>客户案例</h3>
+                        <p>飞书为企业和用户提供高效解决方案，立即查看在使用飞书的企业和客户案例</p>
+                    </a>
+                </div>
+                <div class="boxpart-box">
+                    <a href="" target="_blank">
+                        <img src="./image/icon_bl4r3ak2vhn/5.png" alt="">
+                        <h3>行业解决方案</h3>
+                        <p>从轻量级的日常项目管理到复杂流程的大型项目管理，均有对应的解决方案，确保目标达成</p>
+                    </a>
+                </div>
+                <div class="boxpart-box">
+                    <a href="" target="_blank">
+                        <img src="./image/icon_bl4r3ak2vhn/6.png" alt="">
+                        <h3>博客</h3>
+                        <p>阅读飞书博客文章，探索更多飞书周边话题</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="top-box">
+                    <p>飞书产品</p>
+                    <a href="https://www.feishu.cn/product/ai_companion" target="_blank">飞书智能伙伴</a>
+                    <a href="https://www.feishu.cn/product/base" target="_blank">多维表格</a>
+                    <a href="https://project.feishu.cn/home" target="_blank">飞书项目</a>
+                    <a href="https://www.feishu.cn/product/messenger" target="_blank">即时消息</a>
+                    <a href="https://www.feishu.cn/product/docs" target="_blank">文档</a>
+                    <a href="https://www.feishu.cn/product/video" target="_blank">视频会议</a>
+                    <a href="https://www.feishu.cn/product/minutes" target="_blank">妙记</a>
+                    <a href="https://www.feishu.cn/product/wiki" target="_blank">知识库</a>
+                </div>
+                <div class="top-box">
+                    <p>解决方案</p>
+                    <a href="https://www.feishu.cn/industry_solutions/manufacturing" target="_blank">制造</a>
+                    <a href="https://www.feishu.cn/industry_solutions/consumption" target="_blank">消费品</a>
+                    <a href="https://www.feishu.cn/industry_solutions/retail" target="_blank">零售</a>
+                    <a href="https://www.feishu.cn/industry_solutions/finance" target="_blank">金融</a>
+                    <a href="https://www.feishu.cn/industry_solutions/catering" target="_blank">餐饮</a>
+                    <a href="https://www.feishu.cn/industry_solutions/healthcare" target="_blank">医疗</a>
+                    <a href="https://www.feishu.cn/industry_solutions/saas" target="_blank">企业服务</a>
+                    <a href="https://www.feishu.cn/industry_solutions/automobile" target="_blank">汽车</a>
+                </div>
+                <div class="top-box">
+                    <p>定价</p>
+                    <a href="https://www.feishu.cn/service?from=feishu_website_footer" target="_blank">版本对比</a>
+                    <a href="" target="_blank">购买咨询</a>
+                </div>
+                <div class="top-box">
+                    <p>探索飞书</p>
+                    <a href="https://jobs.bytedance.com/experienced/position?keywords=%E9%A3%9E%E4%B9%A6&_tracking=feishu_from_feishushouye"
+                        target="_blank">加入我们</a>
+                    <a href="https://www.feishu.cn/about" target="_blank">关于飞书</a>
+                    <a href="https://www.feishu.cn/news" target="_blank">新闻中心</a>
+                    <a href="https://www.feishu.cn/research" target="_blank">飞书研习社</a>
+                    <a href="https://www.feishu.cn/certification" target="_blank">飞书认证官</a>
+                    <a href="https://www.feishu.cn/charity" target="_blank">公益计划</a>
+                    <a href="https://www.feishu.cn/partnernews" target="_blank">生态快讯</a>
+                    <a href="https://www.feishu.cn/community?from=feishu_website_footer" target="_blank">飞书社</a>
+                </div>
+                <div class="top-box">
+                    <p>合作与支持</p>
+                    <a href="https://www.feishu.cn/hc/zh-CN/" target="_blank">帮助中心</a>
+                    <a href="https://open.feishu.cn/" target="_blank">开放平台</a>
+                    <a href="https://app.feishu.cn/" target="_blank">应用目录</a>
+                    <a href="https://www.feishu.cn/partners" target="_blank">合作伙伴</a>
+                    <a href="https://www.feishu.cn/contact" target="_blank">联系我们</a>
+                    <a href="https://www.feishu.cn/hc/zh-CN/articles/360043073734-%E9%A3%9E%E4%B9%A6%E5%8A%9F%E8%83%BD%E5%8F%98%E5%8C%96%E8%B7%AF%E5%BE%84"
+                        target="_blank">更新日志</a>
+                    <a href="https://accounts.feishu.cn/accounts/page/login?app_id=13&no_trap=1&redirect_uri=https%3A%2F%2Fwww.feishu.cn%2Fadmin%2Findex"
+                        target="_blank">管理后台</a>
+                    <a href="https://www.feishu.cn/friend_links" target="_blank">友情链接</a>
+                    <a href="https://www.feishu.cn/complaint" target="_blank">举报与反馈</a>
+                </div>
+                <div class="top-box">
+                    <p>法律和法规</p>
+                    <a href="https://www.feishu.cn/terms" target="_blank">服务协议</a>
+                    <a href="https://www.feishu.cn/privacy" target="_blank">隐私政策</a>
+                    <a href="https://www.feishu.cn/security" target="_blank">安全合规</a>
+                    <a href="https://www.feishu.cn/feishu-security-and-compliance-whitepaper"
+                        target="_blank">飞书安全白皮书</a>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <hr>
+            </div>
+            <div class="footer-bottom">
+                <div class="bottom-left">
+                    <a href="https://www.feishu.cn/" id="feishu-bottom-logo" target="_blank">
+                        <img src="./image/logo1.png" alt="">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="./image/logo2.png" alt="">
+                    </a>
+                    <a href="https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fu%2F7223713567&domain=weibo.com&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F136.0.0.0%20Safari%2F537.36%20Edg%2F136.0.0.0&_rand=1747143775569&sudaref="
+                        target="_blank">
+                        <img src="./image/logo3.png" alt="">
+                    </a>
+                    <a href="https://www.zhihu.com/org/fei-shu-27-96/activities" target="_blank">
+                        <img src="./image/logo4.png" alt="">
+                    </a>
+                    <a href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAvJSSJbRqcILvrohwxmRDhTG-2mbJJyClTlxZLjkd8TdyVllmNydnCC2XaQVmqafK/?wid=1747143833764"
+                        target="_blank">
+                        <img src="./image/logo5.png" alt="">
+                    </a>
+                    <a href="https://www.xiaohongshu.com/user/profile/62f09aef000000001f0076d3?xhsshare=CopyLink&appuid=5571317c3f95a333d87b579b&apptime=1675018819"
+                        target="_blank">
+                        <img src="./image/logo6.png" alt="">
+                    </a>
+                    <a href="https://space.bilibili.com/1880331212" target="_blank">
+                        <img src="./image/logo7.png" alt="">
+                    </a>
+                </div>
+                <div class="bottom-right">
+                    <p>
+                        反馈给飞书 CEO：ceo@feishu.cn
+                    </p>
+                </div>
+            </div>
+            <div class="buttom-warning">
+                <div class="warning-box">
+                    <p>Copyright © 2025 北京飞书科技有限公司</p>
+                </div>
+                <div class="warning-box">
+                    <p>京ICP备16045432号-4</p>
+                </div>
+                <div class="warning-box">
+                    <div class="police-logo">
+                        <img src="./image/police-logo.image" alt="">
+                    </div>
+                    <p>京公网安备 11010802029085号</p>
+                </div>
+                <div class="warning-box">
+                    <p>增值电信业务经营许可证：京B2-20190249</p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,1410 @@
+/* 设置 body 元素的样式，属于全局页面样式 */
+body {
+    background-color: #fafdff;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全局通用样式，清除所有元素的默认内外边距并设置盒模型 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 设置列表项 li 元素的样式，常用于导航菜单等列表内容 */
+li {
+    list-style: none;
+    display: block;
+}
+
+/* 菜单容器样式，通常用于导航栏菜单的包裹 */
+.menu-container {
+    height: 70px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* 添加这行代码，使子元素垂直居中 */
+}
+
+/* 导航栏菜单项样式，每个菜单项的具体样式 */
+.header-menuitem {
+    display: flex;
+    height: 70px;
+    margin: 15px;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.menuitem-text {
+    font-size: 25px;
+    color: #1f2329;
+}
+
+.menuitem-img {
+    width: 15px;
+    height: 12px;
+    margin-left: 10px;
+}
+
+.menuitem-img>img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* 保持图片比例，完整显示在容器内 */
+}
+
+/* 导航栏样式，导航栏整体的样式设置 */
+.nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    position: fixed;
+    z-index: 999;
+    /* 设置一个较大的 z-index 值，确保 nav 盒子显示在所有盒子上面 */
+}
+
+/* 导航栏 logo 样式，导航栏中 logo 容器的样式 */
+.nav-logo {
+    display: block;
+    width: 105px;
+    height: 50px;
+    margin-left: 20px;
+    margin-left: 200px;
+}
+
+/* 导航栏 logo 图片样式，logo 图片的具体显示样式 */
+.nav-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* 保持图片比例，完整显示在容器内 */
+}
+
+/* 导航栏右侧按钮容器样式，用于包裹导航栏右侧的按钮 */
+.menu-buttom {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 100px;
+    /* 确保右侧有足够的间距 */
+}
+
+/* 导航栏右侧按钮样式，每个按钮的具体样式 */
+.header-menubuttom {
+    width: 130px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 17.5px;
+    border: #3572ff 2px solid;
+    color: #95b6ec;
+    font-size: 20px;
+}
+
+/* 导航栏右侧第一个按钮样式，对第一个按钮的特殊样式设置 */
+.header-menubuttom.header-menubuttom:nth-child(1) {
+    margin-left: 300px;
+}
+
+/* 导航栏右侧第三个按钮样式，对第三个按钮的特殊样式设置 */
+.header-menubuttom.header-menubuttom:nth-child(3) {
+    background-color: #3572ff;
+    margin-right: 100px;
+}
+
+.header-menuitem-common {
+    width: 100%;
+    height: 800px;
+    padding-left: 280px;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 980;
+    /* 移除重复的 display: flex; */
+    display: none;
+}
+
+.menuitem-scroll {
+    position: fixed;
+    width: 100%;
+    height: 220px;
+    z-index: 900;
+    padding-top: 100px;
+    display: flex;
+}
+
+.scroll-box-container {
+    width: 900px;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 35px;
+    border: #1f2329 1px solid;
+    margin: auto;
+    margin-top: 40px;
+    z-index: 890;
+}
+
+.scroll-box {
+
+    height: 70px;
+    background-color: #fafdff;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.scroll-box:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.scroll-box-img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.scroll-box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.scroll-box-text {
+    text-align: center;
+    /* 文本居中 */
+    font-size: 20px;
+    /* 设置文本与图片的间距 */
+}
+
+.scroll-box-container .scroll-box:first-child {
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+.scroll-box-container .scroll-box:last-child {
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.header-menubuttom:hover {
+    border: #1f2329 1px solid;
+    cursor: pointer;
+}
+
+
+
+/* 电脑端下载区域样式，该区域整体的样式设置 */
+.download-pc {
+    width: 100%;
+    height: 470px;
+    padding-top: 200px;
+    background: linear-gradient(to bottom, #eceafa, #fafdff);
+    margin-top: 0;
+    overflow: auto;
+    /* 防止子元素外边距溢出 */
+    padding-bottom: 0;
+    /* 确保底部内边距为 0 */
+    height: auto;
+    /* 自动调整高度，避免内容溢出 */
+}
+
+/* 飞书优势区域样式，该区域整体的样式设置 */
+.feishu-benefits {
+    width: 100%;
+    height: 980px;
+    background-color: #fafdff;
+    margin-bottom: 0;
+    overflow: auto;
+    /* 防止子元素外边距溢出 */
+    padding-top: 0;
+    /* 确保顶部内边距为 0 */
+    height: auto;
+    /* 自动调整高度，避免内容溢出 */
+}
+
+/* 电脑端下载区域标题样式，标题的文字样式设置 */
+.download-pc>h1 {
+    margin: 160px;
+    text-align: center;
+    font-size: 100px;
+    line-height: 1;
+    /* 调整行高 */
+}
+
+/* 电脑端下载区域描述文字样式，描述文字的显示样式 */
+.download-pc span {
+    display: block;
+    /* 将 span 转为块级元素 */
+    margin: 0 auto;
+    /* 水平居中 */
+    text-align: center;
+    /* 文本内容居中 */
+    margin-top: 40px;
+}
+
+/* 电脑端下载区域说明文字样式，说明文字的样式设置 */
+.download-explain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9197a6;
+}
+
+/* 电脑端下载区域说明文字链接样式，链接的文字颜色设置 */
+.download-explain>a {
+    color: #95b6ec;
+}
+
+/* 电脑端下载方式容器样式，包含多种下载方式的容器样式 */
+.download-ways {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 单个下载方式盒子样式，每个下载方式的具体样式 */
+.download-way {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 90px;
+    flex-direction: column;
+}
+
+/* Windows 下载方式盒子样式，对 Windows 下载方式的特殊样式设置 */
+#windows {
+    margin-left: 200px;
+    position: relative;
+}
+
+/* Linux 下载方式盒子样式，对 Linux 下载方式的特殊样式设置 */
+#linux {
+    margin-right: 200px;
+    position: relative;
+}
+
+/* 下载方式盒子内图片样式，下载方式图标图片的显示样式 */
+.download-way>img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 50px;
+    object-fit: contain;
+}
+
+/* 下载方式盒子内文字样式，下载方式下方文字的显示样式 */
+.download-way>p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Linux 下载方式 beta 标识样式，Linux 下载方式的 beta 标识样式 */
+.download-way-linux-beta {
+    width: 80px;
+    height: 25px;
+    position: absolute;
+    object-fit: contain;
+    top: -75px;
+    right: 0px;
+}
+
+/* 飞书优势区域样式，再次对该区域整体样式设置 */
+.feishu-benefits {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    /* 自动调整高度以适应内容 */
+    background-color: #fafdff;
+}
+
+/* 飞书优势介绍部分样式，介绍文字的样式设置 */
+.feishu-benefits-introduce {
+    width: 100%;
+    /* 确保宽度为 100% */
+    text-align: center;
+    /* 文本居中 */
+}
+
+/* 飞书优势介绍部分标题样式，标题的文字样式设置 */
+.feishu-benefits-introduce h1 {
+    width: 100%;
+    margin: 0;
+    font-size: 50px;
+    line-height: 1.2;
+    /* 调整行高 */
+    margin-top: 100px;
+}
+
+/* 飞书优势内容容器样式，包含多个优势部分的容器样式 */
+.feishu-benefits-container {
+    width: 100%;
+    /* 确保宽度为 100% */
+    height: 580px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    background-color: #fafdff;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 220px;
+    padding-right: 220px;
+    margin-bottom: 0;
+}
+
+/* 单个飞书优势部分样式，每个优势部分的具体样式 */
+.feishu-benefits-part {
+    width: 400px;
+    height: 280px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f6fe;
+    border-radius: 20px;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    /* 设置较小的底部外边距，可按需调整该值 */
+    margin: 0 5px 0 5px;
+    /* 设置左右外边距为 5px */
+    position: relative;
+}
+
+/* 单个飞书优势部分图标容器样式，图标容器的样式设置 */
+.feishu-benefits-part>span {
+    height: 40px;
+    border-radius: 15px;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+/* 单个飞书优势部分图标图片样式，图标图片的显示样式 */
+.feishu-benefits-part>span>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 单个飞书优势部分内容盒子样式，优势内容的盒子样式 */
+.container-box {
+    margin-top: 60px;
+    position: absolute;
+    left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feishu-benefits-part:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+
+/* 单个飞书优势部分按钮样式，按钮的具体样式 */
+.container-box>button {
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border: #95b6ec 1px solid;
+    margin-top: 45px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #f7f6fe;
+}
+
+/* 单个飞书优势部分按钮悬停样式，按钮悬停时的样式变化 */
+.container-box>button:hover {
+    width: 220px;
+    height: 50px;
+    border: #3572ff 1px solid;
+    transition: width 0.3s, height 0.3s;
+}
+
+/* 解决方案区域样式，该区域整体的样式设置 */
+.solutions {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fafdff;
+}
+
+.solutions-textpart {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.solutions-textpart h1 {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 导航按钮容器 */
+.solutions-nav {
+    display: flex;
+    gap: 10px;
+}
+
+/* Swiper 轮播样式 */
+.solutions-swiper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* 确保超出部分隐藏 */
+    position: relative;
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+/* 单个解决方案卡片 */
+.swiper-slide.solution {
+    position: relative;
+    width: 280px !important;
+    /* 固定宽度 */
+    height: 380px;
+    /* 固定高度 */
+    flex-shrink: 0;
+    /* 防止卡片被压缩 */
+    margin-right: 20px;
+    /* 卡片之间的间距 */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+    background-color: #f7f7fa;
+}
+
+.solution:hover {
+    transform: translateY(-5px);
+}
+
+/* 解决方案背景图片 */
+.solution-common {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 解决方案覆盖层 */
+.solution-cover {
+    position: absolute;
+    top: 165px;
+    /* 从顶部 165px 开始 */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 165px);
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    /* 提前设置 transition，让初始状态到悬停状态变化都有过渡效果 */
+    transition: all 1s ease;
+}
+
+.solution-cover:hover {
+    top: 0; /* 从顶部 0px 开始 */
+    height: 100%;
+    border-radius: 12px; /* 与 .solution 的 border-radius 保持一致 */
+}
+
+.solution-cover h2 {
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.solution-cover span {
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.solution-cover img {
+    display: block;
+    width: 32px;
+    height: 28px;
+    margin-left: 20px;
+    margin-top: 80px;
+}
+
+/* 自定义 Swiper 导航按钮样式 */
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.solutions-nav .swiper-button-prev,
+.solutions-nav .swiper-button-next {
+    position: static;
+    /* 取消绝对定位 */
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 18px;
+    color: #333;
+}
+
+/* 隐藏轮播底部的导航按钮 */
+.solutions-swiper>.swiper-button-prev,
+.solutions-swiper>.swiper-button-next {
+    display: none;
+}
+.swiper-button-prev img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.swiper-button-next img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+/* 飞书产品区域样式，该区域整体的样式设置 */
+.feishu-product {
+    width: 100%;
+    height: 800px;
+    margin-top: 50px;
+}
+
+/* 飞书产品内容容器样式，包含产品介绍等内容的容器样式 */
+.feishu-product-container {
+    width: 100%;
+    height: 800px;
+    background-color: #fafdff;
+    position: relative;
+}
+
+/* 飞书产品介绍部分样式，产品介绍文字的样式设置 */
+.feishu-product-introduce {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #fafdff;
+}
+
+/* 飞书产品介绍部分标题样式，标题的文字样式设置 */
+.feishu-product-introduce h1 {
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* 飞书产品文字部分容器样式，包含多个文字盒子的容器样式 */
+.feishu-product-textpart {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 飞书产品单个文字盒子样式，每个文字盒子的具体样式 */
+.textpart-box {
+    width: 140px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    /* 子元素在交叉轴上居中 */
+    text-align: center;
+    /* 文本居中 */
+    margin: 0 30px 0 30px;
+}
+
+/* 飞书产品单个文字盒子图片样式，图片的显示样式 */
+.textpart-box>img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.textpart-box>p {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* 飞书产品展示部分样式，产品展示区域的整体样式 */
+.textpart-show {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+/* 飞书产品展示部分左侧区域样式，左侧区域的整体样式 */
+.textpart-left {
+    width: 420px;
+    height: 600px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: 370px;
+    margin-top: 50px;
+}
+
+/* 飞书产品展示部分左侧应用介绍区域样式，应用介绍区域的样式 */
+.left-ap {
+    width: 420px;
+    height: 370px;
+}
+
+/* 飞书产品展示部分左侧应用介绍区域链接样式，链接的文字样式 */
+.left-ap>a {
+    font-size: 25px;
+    text-decoration: none;
+    /* 移除下划线 */
+    color: #95b6ec;
+    /* 设置链接文字颜色为白色 */
+}
+
+/* 飞书产品展示部分左侧应用介绍区域段落样式，段落的文字样式 */
+.left-ap>p {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/* 飞书产品展示部分左侧按钮样式，按钮的具体样式 */
+.left-buttom {
+    width: 240px;
+    height: 90px;
+    border-radius: 20px;
+    background-color: #95b6ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    /* 增大内边距来扩大点击范围 */
+    padding: 15px;
+    box-sizing: border-box;
+    /* 确保内边距不会使元素超出指定尺寸 */
+}
+
+/* 飞书产品展示部分左侧按钮链接样式，按钮内链接的文字样式 */
+.left-buttom a {
+    color: #ffffff;
+    /* 设置链接文字颜色为白色 */
+    text-decoration: none;
+    /* 移除下划线 */
+}
+
+/* 飞书产品展示部分右侧区域样式，右侧区域的整体样式 */
+.textpart-right {
+    width: 870px;
+    height: 540px;
+    display: flex;
+    margin-left: 240px;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+/* 飞书产品展示部分右侧区域图片样式，图片的显示样式 */
+.textpart-right>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 解决方案区域样式，该区域整体的样式设置 */
+.solutions {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fafdff;
+}
+
+.solutions-textpart {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.solutions-textpart h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin: auto;
+}
+
+/* Swiper 轮播样式 */
+.solutions-swiper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    /* 为左右箭头留出空间 */
+}
+
+/* 单个解决方案卡片 */
+.solution {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.solution:hover {
+    transform: translateY(-5px);
+
+}
+
+/* 解决方案背景图片 */
+.solution-common {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 解决方案覆盖层 */
+.solution-cover {
+    position: absolute;
+    top: 165px;
+    /* 从顶部 165px 开始 */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 165px);
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+}
+
+.solution-cover h2 {
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.solution-cover span {
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.solution-cover img {
+    display: block;
+    width: 32px;
+    height: 28px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+/* 自定义 Swiper 导航按钮样式 */
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 18px;
+    color: #333;
+}
+
+/* 解决方案区域样式，该区域整体的样式设置 */
+.solutions {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fafdff;
+    margin-top: 200px;
+}
+
+.solutions-textpart {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.solutions-textpart h1 {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 导航按钮容器 */
+.solutions-nav {
+    display: flex;
+    gap: 10px;
+}
+
+/* Swiper 轮播样式 */
+.solutions-swiper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* 确保超出部分隐藏 */
+    position: relative;
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+/* 单个解决方案卡片 */
+.swiper-slide.solution {
+    position: relative;
+    width: 280px !important;
+    /* 固定宽度 */
+    height: 380px;
+    /* 固定高度 */
+    flex-shrink: 0;
+    /* 防止卡片被压缩 */
+    margin-right: 20px;
+    /* 卡片之间的间距 */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+    background-color: #f7f7fa;
+}
+
+.solution:hover {
+    transform: translateY(-5px);
+}
+
+/* 解决方案背景图片 */
+.solution-common {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 解决方案覆盖层 */
+.solution-cover {
+    position: absolute;
+    top: 165px;
+    /* 从顶部 165px 开始 */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 165px);
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+}
+
+.solution-cover h2 {
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.solution-cover span {
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.solution-cover img {
+    display: block;
+    width: 32px;
+    height: 28px;
+    margin-left: 20px;
+    margin-top: 80px;
+}
+
+
+/* 自定义 Swiper 导航按钮样式 */
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.solutions-nav .swiper-button-prev,
+.solutions-nav .swiper-button-next {
+    position: static;
+    /* 取消绝对定位 */
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 18px;
+    color: #333;
+}
+
+/* 隐藏轮播底部的导航按钮 */
+.solutions-swiper>.swiper-button-prev,
+.solutions-swiper>.swiper-button-next {
+    display: none;
+}
+
+/* 飞书产品区域样式，该区域整体的样式设置 */
+.feishu-product {
+    width: 100%;
+    height: 800px;
+    margin-top: 50px;
+}
+
+/* 飞书产品内容容器样式，包含产品介绍等内容的容器样式 */
+.feishu-product-container {
+    width: 100%;
+    height: 800px;
+    background-color: #fafdff;
+    position: relative;
+}
+
+/* 飞书产品介绍部分样式，产品介绍文字的样式设置 */
+.feishu-product-introduce {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #fafdff;
+}
+
+/* 飞书产品介绍部分标题样式，标题的文字样式设置 */
+.feishu-product-introduce h1 {
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* 飞书产品文字部分容器样式，包含多个文字盒子的容器样式 */
+.feishu-product-textpart {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 飞书产品单个文字盒子样式，每个文字盒子的具体样式 */
+.textpart-box {
+    width: 140px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    /* 子元素在交叉轴上居中 */
+    text-align: center;
+    /* 文本居中 */
+    margin: 0 30px 0 30px;
+}
+
+/* 飞书产品单个文字盒子图片样式，图片的显示样式 */
+.textpart-box>img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.textpart-box>p {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* 飞书产品展示部分样式，产品展示区域的整体样式 */
+.textpart-show {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+/* 飞书产品展示部分左侧区域样式，左侧区域的整体样式 */
+.textpart-left {
+    width: 420px;
+    height: 600px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: 370px;
+    margin-top: 50px;
+}
+
+/* 飞书产品展示部分左侧应用介绍区域样式，应用介绍区域的样式 */
+.left-ap {
+    width: 420px;
+    height: 370px;
+}
+
+/* 飞书产品展示部分左侧应用介绍区域链接样式，链接的文字样式 */
+.left-ap>a {
+    font-size: 25px;
+    text-decoration: none;
+    /* 移除下划线 */
+    color: #95b6ec;
+    /* 设置链接文字颜色为白色 */
+}
+
+/* 飞书产品展示部分左侧应用介绍区域段落样式，段落的文字样式 */
+.left-ap>p {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/* 飞书产品展示部分左侧按钮样式，按钮的具体样式 */
+.left-buttom {
+    width: 240px;
+    height: 90px;
+    border-radius: 20px;
+    background-color: #95b6ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    /* 增大内边距来扩大点击范围 */
+    padding: 15px;
+    box-sizing: border-box;
+    /* 确保内边距不会使元素超出指定尺寸 */
+}
+
+/* 飞书产品展示部分左侧按钮链接样式，按钮内链接的文字样式 */
+.left-buttom a {
+    color: #ffffff;
+    /* 设置链接文字颜色为白色 */
+    text-decoration: none;
+    /* 移除下划线 */
+}
+
+/* 飞书产品展示部分右侧区域样式，右侧区域的整体样式 */
+.textpart-right {
+    width: 870px;
+    height: 540px;
+    display: flex;
+    margin-left: 240px;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+/* 飞书产品展示部分右侧区域图片样式，图片的显示样式 */
+.textpart-right>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 了解飞书区域样式，该区域整体的样式设置 */
+.learn-feishu {
+    width: 100%;
+    height: auto;
+    background-color: #fafdff;
+}
+
+/* 了解飞书区域文字部分样式，文字介绍的样式设置 */
+.learn-textpart {
+    width: 800px;
+    height: 200px;
+    margin: 0 auto;
+    padding: auto;
+}
+
+/* 了解飞书区域文字部分标题样式，标题的文字样式设置 */
+.learn-textpart>h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+/* 了解飞书区域内容盒子部分样式，包含多个内容盒子的容器样式 */
+.learn-boxpart {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* 单个了解飞书内容盒子样式，每个内容盒子的具体样式 */
+.boxpart-box {
+    width: 600px;
+    height: 366px;
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: #eceafa 0 0 10px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    margin: 5px 20px 5px 20px;
+    margin-bottom: 160px;
+}
+
+.boxpart-box a {
+    text-decoration: none;
+    color: #95b6ec;
+}
+
+.boxpart-box:hover {
+    background-color: #f1f2f1;
+    box-shadow: pink 2px 2px 10px;
+    cursor: pointer;
+}
+
+.boxpart-box img {
+    width: 67px;
+    height: 67px;
+    object-fit: contain;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 55px;
+}
+
+.boxpart-box h3 {
+    font-size: 25px;
+    margin-left: 20px;
+    margin-bottom: 62px;
+}
+
+.boxpart-box p {
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 页脚区域样式，页脚整体的样式设置 */
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #1f2329;
+}
+
+.footer-top {
+    width: 100%;
+    /* 原代码中高度设置可能有误，这里将其改为 auto，让高度自适应内容 */
+    height: auto;
+    display: flex;
+    padding-left: 160px;
+    padding-right: 240px;
+    padding-top: 40px;
+}
+
+.top-box {
+    width: 175px;
+    height: 450x;
+    margin: 0px 45px 0 70px;
+
+}
+
+.top-box>p {
+    height: 56px;
+    text-align: center;
+    color: #fafdff;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.top-box>a {
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+    color: #858e90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.top-box>a:hover {
+    text-decoration: underline;
+}
+
+.footer-middle {
+    /* 修改宽度为 100%，使其适应视口 */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-middle>hr {
+    /* 移除无效的 text-align 属性 */
+    width: 80%;
+    /* 可根据需要调整 hr 的宽度 */
+    height: 1px;
+    background-color: #ffffff;
+    border: none;
+    /* 移除默认边框 */
+}
+
+.footer-bottom {
+    width: 100%;
+    height: 200px;
+    display: flex;
+
+}
+
+.bottom-left {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    margin-left: 164px;
+
+}
+
+.bottom-left>a {
+    width: 42px;
+    height: 42px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.bottom-left>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 40px;
+
+}
+
+#feishu-bottom-logo {
+    width: 160px;
+    height: 42px;
+    margin-right: 160px !important;
+    margin-left: 80px;
+}
+
+.bottom-right {
+    height: 42px;
+    margin-right: 160px;
+}
+
+.bottom-right>p {
+    width: 100%;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+/* 底部警告信息区域样式，设置为 flex 布局，让子元素横向排列 */
+.buttom-warning {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    flex-wrap: wrap;
+    /* 当空间不足时换行 */
+    padding: 20px 0;
+    /* 添加上下内边距 */
+}
+
+/* 单个警告信息盒子样式 */
+.warning-box {
+    margin: 0 10px;
+    /* 添加左右外边距 */
+    display: flex;
+    /* 内部元素也使用 flex 布局 */
+    align-items: center;
+    /* 内部元素垂直居中 */
+}
+
+/* 底部警告信息区域内的警察图标样式 */
+.warning-box .police-logo {
+    margin-right: 5px;
+    /* 图标右侧添加间距 */
+}
+
+.warning-box>p {
+    font-size: 30px;
+    color: #f0f0f0;
+}
+
+.police-logo>img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+}
+
+.warning-box>p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

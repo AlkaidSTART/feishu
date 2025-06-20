@@ -1,0 +1,58 @@
+{
+  "id": "4917433",
+  "name": "feishu",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1652172",
+      "name": "ios",
+      "font_class": "ios",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "3176588",
+      "name": "Android",
+      "font_class": "Android",
+      "unicode": "e9e0",
+      "unicode_decimal": 59872
+    },
+    {
+      "icon_id": "6600664",
+      "name": "Beta",
+      "font_class": "Beta",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "6652237",
+      "name": "macos",
+      "font_class": "macos",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
+    },
+    {
+      "icon_id": "9560924",
+      "name": "windows",
+      "font_class": "windows-100",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "12463174",
+      "name": "linux",
+      "font_class": "linux",
+      "unicode": "e80b",
+      "unicode_decimal": 59403
+    },
+    {
+      "icon_id": "26208645",
+      "name": "macOS",
+      "font_class": "macOS",
+      "unicode": "e6d6",
+      "unicode_decimal": 59094
+    }
+  ]
+}
